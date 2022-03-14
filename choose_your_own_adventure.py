@@ -1,4 +1,13 @@
 # Choose Your Own Adventure
+print("******* Welcome to the Choose Your Own Adventure Game *******")
+
+playing = input("Would you like to play? ").lower()
+
+if playing != "yes" and playing != "y": # if true (anything but yes, will quit game
+    print("Maybe Next Time!")
+    quit()
+
+
 name = input("What is your name? ").title()
 print("Welcome", name, "\nAre you ready for an adventure?!")
 
@@ -38,4 +47,4 @@ elif answer == "right":
 else:
     print("Not a valid response...You lose!")
 
-
+print("Thanks for playing", name + "!")
